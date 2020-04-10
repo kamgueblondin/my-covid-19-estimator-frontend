@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>covid 19 estimator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body style="background-color: #999999;">
+	
+	<div class="limiter">
+		<div class="container-estimator100">
+			<div class="estimator100-more" style="background-image: url('images/bg-01.jpg');"></div>
+
+			<div class="wrap-estimator100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="estimator100-form validate-form" method="POST" action="estimator.php">
+					<span class="estimator100-form-title p-b-59">
+						COVID 19 ESTIMATOR
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate=" Population is required">
+						<span class="label-input100"> Population </span>
+						<input class="input100" type="number" name="data-population" placeholder="Population ...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate=" Time to elapse is required">
+						<span class="label-input100"> Time To Elapse  </span>
+						<input class="input100" type="number" name="data-time-to-elapse" placeholder="Time to elapse ...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Reported cases is required">
+						<span class="label-input100"> Reported Cases </span>
+						<input class="input100" type="number" name="data-reported-cases" placeholder="Reported Cases...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Total hospital beds is required">
+						<span class="label-input100"> Total hospital beds </span>
+						<input class="input100" type="number" name="data-total-hospital-beds" placeholder="Total hospital beds...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 p-t-10">
+						<span class="label-sellect100">Period type</span>
+						<select class="input100" name="data-period-type">
+							<option value="days" selected="true">Days</option>
+							<option value="weeks">Weeks</option>
+							<option value="months">Months</option>
+						</select>
+					</div>
+
+					<div class="container-estimator100-form-btn">
+						<div class="wrap-estimator100-form-btn">
+							<div class="estimator100-form-bgbtn"></div>
+							<button class="estimator100-form-btn" name="data-goestimate">
+								Estimate now
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
